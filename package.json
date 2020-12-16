@@ -1,0 +1,20 @@
+{
+  "name": "persistent-store",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "description": "Simplify how to use IndexedDB",
+  "author": {
+    "name": "João Cruz Araujo Neto",
+    "email": "jcruzaraujoneto@outlook.com",
+    "homepage": "https://earthtechnollogy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaocruz-dev/persistent-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joaocruz-dev/persistent-store/issues"
+  },
+  "homepage": "https://github.com/joaocruz-dev/persistent-store#readme"
+}
