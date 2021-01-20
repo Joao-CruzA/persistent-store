@@ -36,6 +36,10 @@ class PersistentStore {
     return this.transaction.getAll(collection)
   }
 
+  getAllKeys (collection) {
+    return this.transaction.getAllKeys(collection)
+  }
+
   add (collection, value) {
     return this.transaction.add(collection, value)
   }

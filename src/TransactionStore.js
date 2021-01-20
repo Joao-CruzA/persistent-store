@@ -47,6 +47,14 @@ export default class TransactionStore {
     })
   }
 
+  getAllKeys (collection) {
+    return this.transaction(collection, (store, resolve, reject) => {
+      const request = store.getAllKeys()
+      request.onsuccess = (event) => resolve(event.target.result)
+      request.onerror = (event) => reject(event.target.error)
+    })
+  }
+
   add (collection, value) {
     return this.transaction(collection, (store, resolve, reject) => {
       const request = store.add(value)

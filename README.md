@@ -43,6 +43,7 @@ Request methods allowed.
 - ##### store.clear(collection)
 - ##### store.get(collection, key)
 - ##### store.getAll(collection)
+- ##### store.getAllKeys(collection)
 - ##### store.add(collection, value)
 - ##### store.addMany(collection, data)
 - ##### store.update(collection, value)
