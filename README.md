@@ -39,17 +39,17 @@ PersistentStore.crateStore('project', 1, [
 
 Request methods allowed.
 
-- ##### store.count(collection)
-- ##### store.clear(collection)
-- ##### store.get(collection, key)
-- ##### store.getAll(collection)
-- ##### store.getAllKeys(collection)
-- ##### store.add(collection, value)
-- ##### store.addMany(collection, data)
-- ##### store.update(collection, value)
-- ##### store.updateMany(collection, data)
-- ##### store.delete(collection, key)
-- ##### store.deleteMany(collection, keys)
+- ##### store.count(collection): Promise<number>
+- ##### store.clear(collection): Promise<void>
+- ##### store.get(collection, key): Promise<T>
+- ##### store.getAll(collection): Promise<T[]>
+- ##### store.getAllKeys(collection): Promise<(string | number)[]>
+- ##### store.add(collection, value): Promise<string | number>
+- ##### store.addMany(collection, data): Promise<(string | number)[]>
+- ##### store.update(collection, value): Promise<void>
+- ##### store.updateMany(collection, data): Promise<void>
+- ##### store.delete(collection, key): Promise<void>
+- ##### store.deleteMany(collection, keys): Promise<void>
 
 ## Example of Use
 

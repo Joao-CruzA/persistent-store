@@ -58,7 +58,7 @@ export default class TransactionStore {
   add (collection, value) {
     return this.transaction(collection, (store, resolve, reject) => {
       const request = store.add(value)
-      request.onsuccess = (event) => resolve()
+      request.onsuccess = (event) => resolve(event.target.result)
       request.onerror = (event) => reject(event.target.error)
     })
   }
@@ -66,7 +66,7 @@ export default class TransactionStore {
   addMany (collection, data) {
     return new Promise((resolve, reject) => {
       Promise.all(data.map(value => this.add(collection, value)))
-        .then(() => resolve())
+        .then(keys => resolve(keys))
     })
   }
 
